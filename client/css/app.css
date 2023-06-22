@@ -1,0 +1,22 @@
+/**
+ * Form validation states
+ * ----------------------
+ * provide feedback to users when form field values are valid or invalid. works
+ * primarily for client side validation via scoped `:invalid` and `:valid` pseudo
+    * selectors.but also include is-invalid and is-valid classes for
+    * server side or custom validation feedback.
+ */
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 375px) and (max-width: 1023px) {
+  .container {
+    width: 100%;
+  }
+}
