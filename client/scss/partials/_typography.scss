@@ -25,4 +25,14 @@
     @include line-height(28);
 
     font-family: $base-font;
+
+    @include mobile() {
+        @include font-size(12);
+        @include line-height(24);
+    }
+
+    @include tablet() {
+        @include font-size(12);
+        @include line-height(28);
+    }
 }
