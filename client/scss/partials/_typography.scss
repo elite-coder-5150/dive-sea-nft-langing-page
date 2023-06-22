@@ -1,0 +1,28 @@
+@import "vars";
+@import "mixins";
+
+.section-title {
+    @include font-color($clr-heading-text);
+    @include font-size(75);
+    @include line-height(90);
+    @include font-weight(600);
+    @include text-transform(capitalize);
+
+    @include mobile() {
+        @include font-size(47);
+        @include line-height(60);
+    }
+
+    @include tablet() {
+        @include font-size(53);
+        @include line-height(70);
+    }
+}
+
+.description {
+    @include font-color($clr-description-text);
+    @include font-size(16);
+    @include line-height(28);
+
+    font-family: $base-font;
+}
