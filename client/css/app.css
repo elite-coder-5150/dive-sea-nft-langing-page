@@ -20,3 +20,85 @@
     width: 100%;
   }
 }
+
+.section-title {
+  color: #141416;
+  font-size: 4.6875rem;
+  line-height: 90;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+@media (max-width: 375px) {
+  .section-title {
+    font-size: 2.9375rem;
+    line-height: 60;
+  }
+}
+@media (min-width: 375px) and (max-width: 1023px) {
+  .section-title {
+    font-size: 3.3125rem;
+    line-height: 70;
+  }
+}
+
+.description {
+  color: #676767;
+  font-size: 1rem;
+  line-height: 28;
+  font-family: "Inter", sans-serif;
+}
+@media (max-width: 375px) {
+  .description {
+    font-size: 0.75rem;
+    line-height: 24;
+  }
+}
+@media (min-width: 375px) and (max-width: 1023px) {
+  .description {
+    font-size: 0.75rem;
+    line-height: 28;
+  }
+}
+
+.primary-btn {
+  background: #000;
+  padding: 18px 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+@media (min-width: 375px) and (max-width: 1023px) {
+  .primary-btn {
+    padding: 15px 20px;
+  }
+}
+@media (max-width: 375px) {
+  .primary-btn {
+    padding: 15px 21px;
+  }
+}
+.primary-btn--full-width {
+  width: 100%;
+}
+
+.secondary-btn {
+  background: #fff;
+  border: 1px solid #000;
+  padding: 18px 20px;
+  color: #000;
+  text-transform: uppercase;
+}
+@media (min-width: 375px) and (max-width: 1023px) {
+  .secondary-btn {
+    padding: 12px 14px;
+  }
+}
+@media (max-width: 375px) {
+  .secondary-btn {
+    padding: 15px;
+  }
+}
+
+.primary-btn,
+.secondary-btn {
+  border-radius: 12px;
+}
