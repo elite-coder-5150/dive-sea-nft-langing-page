@@ -1,0 +1,24 @@
+/**
+ * Form validation states
+ * ----------------------
+ * provide feedback to users when form field values are valid or invalid. works
+ * primarily for client side validation via scoped `:invalid` and `:valid` pseudo
+    * selectors.but also include is-invalid and is-valid classes for
+    * server side or custom validation feedback.
+ */
+//@each $state, $data in $form-validation-states {
+//  .has-#{$state} {
+//    .form-control {
+//      border-color: $data [border];
+//
+//      &:focus {
+//        border-color: $data [border];
+//        box-shadow: $data [box-shadow];
+//      }
+//    }
+//
+//    .form-control-feedback {
+//      color: $data [text];
+//    }
+//  }
+//}
