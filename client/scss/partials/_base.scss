@@ -1,0 +1,14 @@
+@import "mixins";
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+
+    @include mobile() {
+        width: 100%;
+    }
+
+    @include tablet() {
+        width: 100%;
+    }
+}
