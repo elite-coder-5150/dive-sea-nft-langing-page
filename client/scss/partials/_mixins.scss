@@ -1,0 +1,86 @@
+@import "vars";
+
+@function px-to-rem($px) {
+  @return calc($px / 16) * 1rem;
+}
+
+// q: what does the above function do?
+// a: it converts pixels to rems
+
+@mixin mobile() {
+    @media (max-width: $mobile-width) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
+        @content;
+    }
+}
+
+@mixin desktop() {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+        @content;
+    }
+}
+
+@mixin hi-res-tablet() {
+    @media (min-width: $tablet-width) and (max-width: $hi-res-tablet-width) {
+        @content;
+    }
+}
+
+@mixin landscape() {
+    @media (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin portrait() {
+    @media (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-direction($direction) {
+    flex-direction: $direction;
+}
+
+@mixin letter-spacing($spacing) {
+    letter-spacing: $spacing;
+}
+
+@mixin font-color($color) {
+    color: $color;
+}
+
+@mixin font-size($size) {
+    font-size: px-to-rem($size);
+}
+
+@mixin line-height($height) {
+    line-height: $height;
+}
+
+@mixin font-weight($weight) {
+    font-weight: $weight;
+}
+
+@mixin text-transform($transform) {
+    text-transform: $transform;
+}
+
+@mixin v-padding($padding) {
+    padding: $padding 0;
+}
+
+@mixin h-padding($padding) {
+    padding: 0 $padding;
+}
