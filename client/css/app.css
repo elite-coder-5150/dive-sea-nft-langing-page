@@ -79,6 +79,9 @@
 .primary-btn--full-width {
   width: 100%;
 }
+.primary-btn__lg {
+  padding: 18px 30px;
+}
 
 .secondary-btn {
   background: #fff;
@@ -101,4 +104,16 @@
 .primary-btn,
 .secondary-btn {
   border-radius: 12px;
+}
+.primary-btn__lg,
+.secondary-btn__lg {
+  padding: 18px 20px;
+}
+.primary-btn__md,
+.secondary-btn__md {
+  padding: 15px 20px;
+}
+.primary-btn__sm,
+.secondary-btn__sm {
+  padding: 12px 14px;
 }
