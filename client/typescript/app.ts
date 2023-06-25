@@ -10,3 +10,5 @@ export class App {
 
     initEvents() {}
 }
+
+const app = new App()
