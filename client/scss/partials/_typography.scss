@@ -18,7 +18,23 @@
         @include line-height(70);
     }
 }
+.title {
+    @include font-color($clr-heading-text);
+    @include font-size(30);
+    @include line-height(40);
+    @include font-weight(600);
+    @include text-transform(capitalize);
 
+    @include mobile() {
+        @include font-size(20);
+        @include line-height(30);
+    }
+
+    @include tablet() {
+        @include font-size(25);
+        @include line-height(35);
+    }
+}
 .description {
     @include font-color($clr-description-text);
     @include font-size(16);
