@@ -1,0 +1,54 @@
+@import "vars";
+@import "mixins";
+
+.showcase {
+    @include flex();
+
+
+    .left {
+        @include pull-left();
+
+        .section-title {
+            @include font-color($clr-heading-text);
+            @include font-size(70);
+            @include line-height(90);
+            @include font-weight(700);
+
+            @include font-family($heading-font);
+        }
+
+        .description {
+            @include font-color($clr-description-text);
+            @include font-size(20);
+            @include line-height(30);
+            @include font-weight(400);
+            @include font-family($base-font);
+        }
+
+        .stats {
+            .artworks,
+            .creators,
+            .collections {
+                .number {
+                    @include font-color($clr-heading-text);
+                    @include font-size(37);
+                    @include line-height(45);
+                    @include font-weight(700);
+                    @include font-family($heading-font);
+                }
+
+                .muted-text {
+                    @include font-color($clr-muted-text);
+                    @include font-size(14);
+                    @include line-height(21);
+                    @include font-weight(400);
+                    @include font-family($base-font);
+                }
+            }
+        }
+    }
+
+    .right {
+        @include pull-right();
+    }
+}
