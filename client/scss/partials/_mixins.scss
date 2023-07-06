@@ -14,7 +14,7 @@
 }
 
 @mixin tablet() {
-    @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
+    @media (min-width: $mobile-width) and (max-width: $tablet-width) {
         @content;
     }
 }
@@ -31,6 +31,22 @@
     }
 }
 
+// if i just typescript to get the resolution of the screen
+// and then use that to determine what class is should apply 
+//? to the container element
+@mixin tablet-landscape() {
+    @media (min-width: $tablet-width) and 
+        (max-width: $table-landscape-width) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin mobile-landscape() {
+    @media (max-width: $mobile-width) and (orientation: landscape) {
+        @content;
+    }
+}
+
 @mixin landscape() {
     @media (orientation: landscape) {
         @content;
@@ -43,6 +59,25 @@
     }
 }
 
+@mixin size($w, $h) {
+    width: px-to-rem($w);
+    height: px-to-rem($h);
+}
+@mixin flex() {
+    display: flex;
+}
+
+@mixin pull-right() {
+    margin-left: auto;
+}
+
+@mixin pull-left() {
+    margin-right: auto;
+}
+
+@mixin font-family($font) {
+    font-family: $font;
+}
 @mixin flex-center() {
     display: flex;
     justify-content: center;
