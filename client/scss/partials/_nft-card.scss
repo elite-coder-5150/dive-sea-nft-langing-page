@@ -1,3 +1,10 @@
-.nft-card {
+@import "vars";
+@import "mixins";
 
+.nft-card {
+    @include size(282, 403);
+
+    .featured-img {
+
+    }
 }

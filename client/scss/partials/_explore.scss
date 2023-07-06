@@ -1,0 +1,30 @@
+@import "vars";
+@import "mixins";
+
+.explore-marketplace {
+    .filters {
+        border: 1px solid $clr-filter-border;
+
+        @include flex();
+        @include flex-direction(row);
+        @include font-color($clr-filter-text);
+        @include font-size(16);
+        @include line-height(28);
+
+        .filter {
+            @include flex();
+            @include flex-direction(row);
+            @include text-transform(capitalize);
+            @include font-family($base-font);
+
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+
+            &.active {
+                background-color: $clr-primary;
+                color: $clr-light-text;
+            }
+        }
+    }
+}
