@@ -1,0 +1,15 @@
+@import "partials/mixins";
+
+.category-icon {
+    background: url('../img/icons/list-icon.png') no-repeat;
+    @include size(28, 28)
+}
+.collection-icon {
+    background: url('../img/icons/collection-icon.png') no-repeat;
+    @include size(28, 28);
+}
+
+.currency-icon {
+    background: url('../img/icons/currency-icon.png') no-repeat;
+    @include size(28, 28);
+}
