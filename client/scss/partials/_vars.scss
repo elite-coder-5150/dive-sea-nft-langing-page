@@ -2,6 +2,8 @@ $mobile-width: 375px;
 $tablet-width: 1024px;
 $desktop-width: 1440px;
 
+$table-landscape-width: 1024px;
+
 $hi-res-tablet-width: 1366px;
 
 $clr-form-valid: #198754;
@@ -10,7 +12,10 @@ $clr-form-invalid: #dc3545;
 $clr-form-invalid-border: $clr-form-invalid;
 //$form-feedback-icon-valid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$form-feedback-icon-valid-color}' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>") !default;
 
+$clr-primary: #198754;
 
+$clr-filter-border: #141416;
+$clr-filter-text: #1A202C;
 
 $clr-menu-link: #606060;
 $clr-heading-text: #141416;
@@ -21,3 +26,6 @@ $clr-light-text: #fff;
 $base-font: 'Inter', sans-serif;
 $heading-font: 'Popins', sans-serif;
 
+$clr-dark-bg: #141416;
+$clr-secondary-border: #E6E8EC;
+$clr-muted-text: #939394
