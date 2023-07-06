@@ -5,11 +5,18 @@
     margin: 0 auto;
 
     @include mobile() {
-        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     @include tablet() {
-        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    @include tablet-landscape() {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
     }
 }
 
