@@ -21,5 +21,10 @@
     "@types/mysql": "^2.15.21",
     "express": "^4.18.2",
     "mysql": "^2.18.1"
+  },
+  "dependencies": {
+    "@types/sequelize": "^4.28.15",
+    "mysql2": "^3.4.3",
+    "sequelize": "^6.32.1"
   }
 }
