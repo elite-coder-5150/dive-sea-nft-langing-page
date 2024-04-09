@@ -1,0 +1,7 @@
+@import "vars";
+@import "mixins";
+
+.table {
+    @include display('table');
+    border-collapse: collapse;
+}
