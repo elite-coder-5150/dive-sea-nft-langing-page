@@ -31,9 +31,6 @@
     }
 }
 
-// if i just typescript to get the resolution of the screen
-// and then use that to determine what class is should apply 
-//? to the container element
 @mixin tablet-landscape() {
     @media (min-width: $tablet-width) and 
         (max-width: $table-landscape-width) and (orientation: landscape) {
@@ -65,6 +62,16 @@
 }
 @mixin flex() {
     display: flex;
+}
+
+@mixin display($type) {
+    @if $type == 'flex' {
+        display: flex;
+    } @else if $type == 'table' {
+        display: table;
+    } @else {
+        display: block;
+    }
 }
 
 @mixin pull-right() {
